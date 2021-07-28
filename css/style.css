@@ -3,7 +3,10 @@
 :root {
   --primary-text: #333;
   --primary-margin: 10px 0px;
-  --primary-bgColor: #047aed;
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
 }
 
 * {
@@ -47,7 +50,7 @@ img {
 /* NAVBAR */
 
 .navbar {
-    background-color: var(--primary-bgColor);
+    background-color: var(--primary-color);
     color: #fff;
     height: 70px;
 }
@@ -74,7 +77,7 @@ img {
 
 .showcase {
     height: 400px;
-    background-color: var(--primary-bgColor);
+    background-color: var(--primary-color);
     color: #fff;
     position: relative;
 }
@@ -167,4 +170,10 @@ img {
     grid-column: 1 / span 2;
     /* starts on 1st row and spans to the 2nd */
     grid-row: 1 / span 2;
+}
+
+/* CLOUD */
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
 }
