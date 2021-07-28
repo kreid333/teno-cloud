@@ -242,10 +242,6 @@ img {
 
 /* MOBILE */
 @media(max-width: 500px) {
-    html {
-        min-width: fit-content;
-    }
-    
     .navbar {
         height: 110px;
     }
