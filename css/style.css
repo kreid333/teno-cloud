@@ -154,3 +154,17 @@ img {
     font-size: 20px;
     font-weight: bold;
 }
+
+/* CLI */
+
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+    /* starts on 1st column and spans to the 2nd */
+    grid-column: 1 / span 2;
+    /* starts on 1st row and spans to the 2nd */
+    grid-row: 1 / span 2;
+}
