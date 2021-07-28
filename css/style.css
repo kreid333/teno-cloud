@@ -44,6 +44,8 @@ img {
   width: 100%;
 }
 
+/* NAVBAR */
+
 .navbar {
     background-color: var(--primary-bgColor);
     color: #fff;
@@ -68,6 +70,30 @@ img {
     justify-content: space-between;
 }
 
+/* SHOWCASE */
+
+.showcase {
+    height: 400px;
+    background-color: var(--primary-bgColor);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0px;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+/* UTILITIES */
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -77,6 +103,15 @@ img {
 
 .flex {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100%;
